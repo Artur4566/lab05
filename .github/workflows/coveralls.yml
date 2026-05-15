@@ -26,8 +26,8 @@ jobs:
 
     - name: Collect coverage data
       run: |
-        lcov --capture --directory . --output-file coverage.info --no-external --ignore-errors mismatch
-        lcov --remove coverage.info '*/_build/*' '*/tests/*' '*/usr/*' '*/third-party/*' --output-file coverage.info --ignore-errors mismatch
+        lcov --capture --directory . --output-file coverage.info --no-external --ignore-errors mismatch,unused
+        lcov --remove coverage.info '*/_build/*' '*/tests/*' '*/usr/*' '*/third-party/*' --output-file coverage.info --ignore-errors mismatch,unused
         lcov --list coverage.info
 
     - name: Upload to Coveralls
