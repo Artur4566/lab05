@@ -1,21 +1,19 @@
-# Лабораторная работа №4
-## CI/CD
+# Лабораторная работа №5
+## Google Test
 
 **Автор:** Кешишоглян Артур
 
 ## CI/CD Status
 
-[![CI](https://github.com/Artur4566/lab04/actions/workflows/ci.yml/badge.svg)](https://github.com/Artur4566/lab04/actions/workflows/ci.yml)
-[![Build status](https://ci.appveyor.com/api/projects/status/github/Artur4566/lab04?svg=true)](https://ci.appveyor.com/project/Artur4566/lab04)
+[![CI](https://github.com/Artur4566/lab05/actions/workflows/ci.yml/badge.svg)](https://github.com/Artur4566/lab05/actions/workflows/ci.yml)
 
-## Сборка
+## Сборка и тесты
 
 ```bash
 mkdir build && cd build
-cmake ..
+cmake .. -DBUILD_TESTS=ON
 cmake --build .
-\`\`\`
+ctest
+Repository
 
-## Repository
-
-https://github.com/Artur4566/lab04
+https://github.com/Artur4566/lab05
